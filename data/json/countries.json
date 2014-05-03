@@ -1,0 +1,131 @@
+[
+  {
+    "pais": "Brasil",
+    "superficie_km_2": "8.547.406",
+    "poblacion": "206,5 (22)",
+    "IDH": "0,730",
+    "FIELD5": "",
+    "mandatario": "Dilma Rousseff",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+  },
+  {
+    "pais": "Argentina",
+    "superficie_km_2": "2.791.508[nota 3]",
+    "poblacion": "42,1 (15)",
+    "IDH": "0,811",
+    "FIELD5": "",
+    "mandatario": "Cristina Fernández de Kirchner",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+  },
+  {
+    "pais": "Perú",
+    "superficie_km_2": "1.285.240",
+    "poblacion": "31,3 (28)",
+    "IDH": "0,741",
+    "FIELD5": "",
+    "mandatario": "Ollanta Humala",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+  },
+  {
+    "pais": "Colombia",
+    "superficie_km_2": "1.141.748",
+    "poblacion": "47,7 (36)",
+    "IDH": "0,719",
+    "FIELD5": "",
+    "mandatario": "Juan Manuel Santos",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+  },
+  {
+    "pais": "Bolivia",
+    "superficie_km_2": "1.098.581",
+    "poblacion": "10,4 (8)",
+    "IDH": "0,675",
+    "FIELD5": "",
+    "mandatario": "Evo Morales",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+  },
+  {
+    "pais": "Venezuela",
+    "superficie_km_2": "916.445[nota 4]",
+    "poblacion": "29,9 (27)",
+    "IDH": "0,748",
+    "FIELD5": "",
+    "mandatario": "Nicolás Maduro",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/20px-Flag_of_Venezuela.svg.png"
+  },
+  {
+    "pais": "Chile",
+    "superficie_km_2": "756.948[nota 5]",
+    "poblacion": "17,5 (24)",
+    "IDH": "0,819",
+    "FIELD5": "",
+    "mandatario": "Michelle Bachelet",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+  },
+  {
+    "pais": "Paraguay",
+    "superficie_km_2": "406.757",
+    "poblacion": "7.1 (14)",
+    "IDH": "0,669",
+    "FIELD5": "",
+    "mandatario": "Horacio Cartes",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+  },
+  {
+    "pais": "Ecuador",
+    "superficie_km_2": "283.560",
+    "poblacion": "15,4 (47)",
+    "IDH": "0,724",
+    "FIELD5": "",
+    "mandatario": "Rafael Correa",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+  },
+  {
+    "pais": "Guyana",
+    "superficie_km_2": "215.096",
+    "poblacion": "0,7 (3)",
+    "IDH": "0,636",
+    "FIELD5": "",
+    "mandatario": "Donald Ramotar",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/20px-Flag_of_Guyana.svg.png"
+  },
+  {
+    "pais": "Uruguay",
+    "superficie_km_2": "189.928",
+    "poblacion": "3,4 (19)",
+    "IDH": "0,792",
+    "FIELD5": "",
+    "mandatario": "José Mujica",
+    "FIELD7": ""
+  },
+  {
+    "pais": "Surinam",
+    "superficie_km_2": "163.458",
+    "poblacion": "0,5 (3)",
+    "IDH": "0,684",
+    "FIELD5": "",
+    "mandatario": "Dési Bouterse",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/20px-Flag_of_Suriname.svg.png"
+  },
+  {
+    "pais": "Trinidad y Tobago",
+    "superficie_km_2": "5.128",
+    "poblacion": "1,2 (254)",
+    "IDH": "0,760",
+    "FIELD5": "",
+    "mandatario": "Anthony Carmona",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/20px-Flag_of_Trinidad_and_Tobago.svg.png"
+  }
+]
