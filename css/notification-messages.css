@@ -1,0 +1,79 @@
+.message{
+    width: 100%;
+    border: 1px solid;
+    color: #fff;
+    padding: 10px 30px;
+    position: absolute;
+    display: inline;
+    top:-200px;
+    left: 0;
+    _position: absolute;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);    
+    -webkit-box-shadow: -6px 6px 8px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    -6px 6px 8px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         -6px 6px 8px 0px rgba(50, 50, 50, 0.5);
+    bkit-animation: animate-bg 5s linear infinite;
+    moz-animation: animate-bg 5s linear infinite;
+    
+   
+}
+.info{
+    background-color: #4ea5cd;
+    border-color: #3b8eb5;
+}
+
+.error{
+    background-color: #de4343;
+    border-color: #c43d3d;
+}
+
+.warning{
+    background-color: #eaaf51;
+    border-color: #d99a36;
+}
+
+.success{
+    background-color: #61b832;
+    border-color: #55a12c;
+}
+
+.message h3{
+    margin: 0 0 5px 0;
+}
+
+.message p{
+    margin: 0;
+}
+
+@-webkit-keyframes animate-bg{
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -80px 0;
+    }
+}
+
+@-moz-keyframes animate-bg{
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -80px 0;
+    }
+}
+.close-message {
+    width: 16px;
+    height: 16px;
+    position: fixed;
+    top:-100px;
+    right: 10px;;
+    background-image: url("../img/messages/messages.png");
+    background-position: 0 0px;
+    text-indent:  -10000em;
+}
+.show{display: block;}
+
+.hide{display: none;}
+
