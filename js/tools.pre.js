@@ -16,36 +16,29 @@ ToolsPre = {
             // Force the use of the enhanced (rich) clipboard on Linux OSes despite its problems
             forceEnhancedClipboard: false
         };
-        
-        console.log(_coreConfig);
         this.copy(id, _coreConfig);
         
     },
     copy: function(id, _coreConfig) {
         var clientTarget = new ZeroClipboard( $(id),  _coreConfig  );
 
-//        clientTarget.on( "load", function(clientTarget){
-//            clientTarget.on( "complete", function(clientTarget, args) {
-//                console.log("texto copiado");
-//                clientTarget.setText( args.text );
-//            } );
-//        } );
-        console.log(clientTarget);
-        
-        
-
         clientTarget.on( 'ready', function(event) {
-            //console.log( 'movie is loaded' );
+        //Call and load of file swf to copy text
 
+            //Funciton to copy text in clipboard            
             clientTarget.on( 'copy', function(event, args) {
-//                event.clipboardData.setData('text/plain', event.target.innerHTML);
-                var idTextToCopy = $(event.target).data("clipboard-target");
-                event.clipboardData.setData('text/plain', $(idTextToCopy).html()); 
+                var idOriginTextToCopy = $(event.target).data("clipboard-target");
+                event.clipboardData.setData('text/plain', $(idOriginTextToCopy).html()); 
             } );
 
             clientTarget.on( 'aftercopy', function(event) {
-//                console.log('Copied text to clipboard: ' + event.data['text/plain']);
-                console.log('Copied text to clipboard: ' + event.data['text/plain']);
+            //Event after copy text in clipboad more common used, for show messages Text copied...!
+             //console.log('Copied text to clipboard: ' + event.data['text/plain']);
+                $(".message").alerts("success",{
+                    delay:{show: 350, hidden: 5000},
+                    title: "Texto copiado.",
+                    message: "El json esta en el porta papeles, puede copiarlo en su editor de JSON preferido."
+                });
             } );
         } );
 

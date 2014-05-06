@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer611862069 = (function () {
+var __recognizer289897688 = (function () {
     'use strict';
 
     var global = this;
@@ -98,540 +98,787 @@ var __recognizer611862069 = (function () {
  */
 
 (function ($) {
-    __recognizer611862069.logEntry([
+    __recognizer289897688.logEntry([
         9,
         1,
         9,
         9
     ], arguments);
     function alerts(object) {
-        __recognizer611862069.logEntry([
+        __recognizer289897688.logEntry([
             12,
             13,
             12,
             19
         ], arguments);
         this.type = 'success';
-        this.position = { 'top': 75 };
         this.delay = {
-            show: 500,
+            show: 350,
             hidden: 1000
         };
-        this.prefix = '.';
-        this.title = 'Title in you message';
+        this.title = 'Title in you alert message';
         this.message = 'This is a message, is a option inyect data in message for dynamic valus in real time in your alert';
     }
     alerts.prototype.show = function (objDom, type, conf) {
-        __recognizer611862069.logEntry([
-            21,
+        __recognizer289897688.logEntry([
+            19,
             28,
-            21,
+            19,
             36
         ], arguments);
-        var _this = __recognizer611862069.logProbe([
-                22,
+        var _this = __recognizer289897688.logProbe([
                 20,
-                22,
+                20,
+                20,
                 24
             ], this);
-        if (__recognizer611862069.logProbe([
-                23,
+        if (__recognizer289897688.logProbe([
+                21,
                 11,
-                23,
+                21,
                 15
             ], conf)) {
-            this.position = __recognizer611862069.logProbe([
-                24,
+            this.delay = __recognizer289897688.logProbe([
+                22,
                 33,
-                24,
-                41
-            ], __recognizer611862069.logProbe([
-                24,
-                28,
-                24,
-                32
-            ], conf).position) || __recognizer611862069.logProbe([
-                24,
-                51,
-                24,
-                59
-            ], __recognizer611862069.logProbe([
-                24,
-                45,
-                24,
-                50
-            ], _this).position);
-            this.delay = __recognizer611862069.logProbe([
-                25,
-                33,
-                25,
+                22,
                 38
-            ], __recognizer611862069.logProbe([
-                25,
+            ], __recognizer289897688.logProbe([
+                22,
                 28,
-                25,
+                22,
                 32
-            ], conf).delay) || __recognizer611862069.logProbe([
-                25,
+            ], conf).delay) || __recognizer289897688.logProbe([
+                22,
                 51,
-                25,
+                22,
                 56
-            ], __recognizer611862069.logProbe([
-                25,
+            ], __recognizer289897688.logProbe([
+                22,
                 45,
-                25,
+                22,
                 50
             ], _this).delay);
+            this.title = __recognizer289897688.logProbe([
+                23,
+                33,
+                23,
+                38
+            ], __recognizer289897688.logProbe([
+                23,
+                28,
+                23,
+                32
+            ], conf).title) || __recognizer289897688.logProbe([
+                23,
+                51,
+                23,
+                56
+            ], __recognizer289897688.logProbe([
+                23,
+                45,
+                23,
+                50
+            ], _this).title);
+            this.message = __recognizer289897688.logProbe([
+                24,
+                33,
+                24,
+                40
+            ], __recognizer289897688.logProbe([
+                24,
+                28,
+                24,
+                32
+            ], conf).message) || __recognizer289897688.logProbe([
+                24,
+                51,
+                24,
+                58
+            ], __recognizer289897688.logProbe([
+                24,
+                45,
+                24,
+                50
+            ], _this).message);
         }
-        this.type = __recognizer611862069.logProbe([
-            27,
-            24,
-            27,
-            28
-        ], type) || __recognizer611862069.logProbe([
-            27,
-            47,
-            27,
-            51
-        ], __recognizer611862069.logProbe([
-            27,
-            41,
-            27,
-            46
+        this.type = __recognizer289897688.logProbe([
+            26,
+            28,
+            26,
+            32
+        ], type) || __recognizer289897688.logProbe([
+            26,
+            51,
+            26,
+            55
+        ], __recognizer289897688.logProbe([
+            26,
+            45,
+            26,
+            50
         ], _this).type);
         (function () {
             var obj = function () {
                     var obj = function () {
-                            var obj = __recognizer611862069.logProbe([
-                                    30,
-                                    8,
-                                    30,
-                                    17
-                                ], __recognizer611862069.logProbe([
-                                    30,
-                                    8,
-                                    30,
-                                    9
-                                ], $)(__recognizer611862069.logProbe([
-                                    30,
-                                    10,
-                                    30,
-                                    16
-                                ], objDom))), fn = __recognizer611862069.logProbe([
-                                    30,
-                                    18,
-                                    30,
-                                    26
-                                ], obj.children);
-                            return fn.apply(obj, arguments);
-                        }.bind(this)(), fn = __recognizer611862069.logProbe([
-                            30,
-                            29,
-                            30,
-                            34
-                        ], obj.first);
-                    return fn.apply(obj, arguments);
-                }.bind(this)(), fn = __recognizer611862069.logProbe([
-                    30,
-                    37,
-                    30,
-                    45
-                ], obj.addClass);
-            return fn.apply(obj, arguments);
-        }.bind(this)('show'));
-        (function () {
-            var obj = function () {
-                    var obj = function () {
                             var obj = function () {
-                                    var obj = __recognizer611862069.logProbe([
-                                            31,
+                                    var obj = __recognizer289897688.logProbe([
+                                            30,
                                             8,
-                                            31,
+                                            30,
                                             17
-                                        ], __recognizer611862069.logProbe([
-                                            31,
+                                        ], __recognizer289897688.logProbe([
+                                            30,
                                             8,
-                                            31,
+                                            30,
                                             9
-                                        ], $)(__recognizer611862069.logProbe([
-                                            31,
+                                        ], $)(__recognizer289897688.logProbe([
+                                            30,
                                             10,
-                                            31,
+                                            30,
                                             16
-                                        ], objDom))), fn = __recognizer611862069.logProbe([
-                                            31,
+                                        ], objDom))), fn = __recognizer289897688.logProbe([
+                                            30,
                                             18,
-                                            31,
+                                            30,
                                             26
                                         ], obj.children);
                                     return fn.apply(obj, arguments);
-                                }.bind(this)(), fn = __recognizer611862069.logProbe([
-                                    31,
+                                }.bind(this)(), fn = __recognizer289897688.logProbe([
+                                    30,
                                     29,
-                                    31,
+                                    30,
                                     34
                                 ], obj.first);
                             return fn.apply(obj, arguments);
-                        }.bind(this)(), fn = __recognizer611862069.logProbe([
-                            31,
+                        }.bind(this)(), fn = __recognizer289897688.logProbe([
+                            30,
                             37,
-                            31,
+                            30,
                             41
                         ], obj.next);
                     return fn.apply(obj, arguments);
-                }.bind(this)(), fn = __recognizer611862069.logProbe([
-                    31,
+                }.bind(this)(), fn = __recognizer289897688.logProbe([
+                    30,
                     44,
-                    31,
+                    30,
                     48
                 ], obj.html);
             return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer611862069.logProbe([
-            31,
+        }.bind(this)(__recognizer289897688.logProbe([
+            30,
             54,
-            31,
+            30,
             59
-        ], __recognizer611862069.logProbe([
-            31,
+        ], __recognizer289897688.logProbe([
+            30,
             49,
-            31,
+            30,
             53
         ], this).title)));
         (function () {
             var obj = function () {
                     var obj = function () {
-                            var obj = __recognizer611862069.logProbe([
-                                    32,
+                            var obj = __recognizer289897688.logProbe([
+                                    31,
                                     8,
-                                    32,
+                                    31,
                                     17
-                                ], __recognizer611862069.logProbe([
-                                    32,
+                                ], __recognizer289897688.logProbe([
+                                    31,
                                     8,
-                                    32,
+                                    31,
                                     9
-                                ], $)(__recognizer611862069.logProbe([
-                                    32,
+                                ], $)(__recognizer289897688.logProbe([
+                                    31,
                                     10,
-                                    32,
+                                    31,
                                     16
-                                ], objDom))), fn = __recognizer611862069.logProbe([
-                                    32,
+                                ], objDom))), fn = __recognizer289897688.logProbe([
+                                    31,
                                     18,
-                                    32,
+                                    31,
                                     26
                                 ], obj.children);
                             return fn.apply(obj, arguments);
-                        }.bind(this)(), fn = __recognizer611862069.logProbe([
-                            32,
+                        }.bind(this)(), fn = __recognizer289897688.logProbe([
+                            31,
                             29,
-                            32,
+                            31,
                             33
                         ], obj.last);
                     return fn.apply(obj, arguments);
-                }.bind(this)(), fn = __recognizer611862069.logProbe([
-                    32,
+                }.bind(this)(), fn = __recognizer289897688.logProbe([
+                    31,
                     36,
-                    32,
+                    31,
                     40
                 ], obj.html);
             return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer611862069.logProbe([
-            32,
+        }.bind(this)(__recognizer289897688.logProbe([
+            31,
             46,
-            32,
+            31,
             53
-        ], __recognizer611862069.logProbe([
-            32,
+        ], __recognizer289897688.logProbe([
+            31,
             41,
-            32,
+            31,
             45
         ], this).message)));
         (function () {
-            var obj = __recognizer611862069.logProbe([
-                    35,
+            var obj = __recognizer289897688.logProbe([
+                    34,
                     8,
-                    35,
+                    34,
                     17
-                ], __recognizer611862069.logProbe([
-                    35,
+                ], __recognizer289897688.logProbe([
+                    34,
                     8,
-                    35,
+                    34,
                     9
-                ], $)(__recognizer611862069.logProbe([
-                    35,
+                ], $)(__recognizer289897688.logProbe([
+                    34,
                     10,
-                    35,
+                    34,
                     16
-                ], objDom))), fn = __recognizer611862069.logProbe([
-                    35,
+                ], objDom))), fn = __recognizer289897688.logProbe([
+                    34,
                     18,
-                    35,
+                    34,
                     26
                 ], obj.addClass);
             return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer611862069.logProbe([
-            35,
+        }.bind(this)(__recognizer289897688.logProbe([
+            34,
             32,
-            35,
+            34,
             36
-        ], __recognizer611862069.logProbe([
-            35,
+        ], __recognizer289897688.logProbe([
+            34,
             27,
-            35,
+            34,
             31
         ], this).type)));
         (function () {
-            var obj = __recognizer611862069.logProbe([
-                    36,
+            var obj = __recognizer289897688.logProbe([
+                    35,
                     8,
-                    36,
+                    35,
                     17
-                ], __recognizer611862069.logProbe([
-                    36,
+                ], __recognizer289897688.logProbe([
+                    35,
                     8,
-                    36,
+                    35,
                     9
-                ], $)(__recognizer611862069.logProbe([
-                    36,
+                ], $)(__recognizer289897688.logProbe([
+                    35,
                     10,
-                    36,
+                    35,
                     16
-                ], objDom))), fn = __recognizer611862069.logProbe([
-                    36,
+                ], objDom))), fn = __recognizer289897688.logProbe([
+                    35,
                     18,
-                    36,
+                    35,
                     25
                 ], obj.animate);
             return fn.apply(obj, arguments);
-        }.bind(this)({ top: 0 }, __recognizer611862069.logProbe([
-            36,
-            47,
-            36,
-            51
-        ], __recognizer611862069.logProbe([
-            36,
-            41,
-            36,
-            46
-        ], __recognizer611862069.logProbe([
-            36,
-            36,
-            36,
-            40
+        }.bind(this)({
+            top: function () {
+                var obj = __recognizer289897688.logProbe([
+                        35,
+                        32,
+                        35,
+                        41
+                    ], __recognizer289897688.logProbe([
+                        35,
+                        32,
+                        35,
+                        33
+                    ], $)(__recognizer289897688.logProbe([
+                        35,
+                        34,
+                        35,
+                        40
+                    ], window))), fn = __recognizer289897688.logProbe([
+                        35,
+                        42,
+                        35,
+                        51
+                    ], obj.scrollTop);
+                return fn.apply(obj, arguments);
+            }.bind(this)()
+        }, __recognizer289897688.logProbe([
+            35,
+            67,
+            35,
+            71
+        ], __recognizer289897688.logProbe([
+            35,
+            61,
+            35,
+            66
+        ], __recognizer289897688.logProbe([
+            35,
+            56,
+            35,
+            60
         ], this).delay).show)));
-        __recognizer611862069.logProbe([
+        (function () {
+            var obj = function () {
+                    var obj = function () {
+                            var obj = __recognizer289897688.logProbe([
+                                    36,
+                                    8,
+                                    36,
+                                    17
+                                ], __recognizer289897688.logProbe([
+                                    36,
+                                    8,
+                                    36,
+                                    9
+                                ], $)(__recognizer289897688.logProbe([
+                                    36,
+                                    10,
+                                    36,
+                                    16
+                                ], objDom))), fn = __recognizer289897688.logProbe([
+                                    36,
+                                    18,
+                                    36,
+                                    26
+                                ], obj.children);
+                            return fn.apply(obj, arguments);
+                        }.bind(this)(), fn = __recognizer289897688.logProbe([
+                            36,
+                            29,
+                            36,
+                            34
+                        ], obj.first);
+                    return fn.apply(obj, arguments);
+                }.bind(this)(), fn = __recognizer289897688.logProbe([
+                    36,
+                    37,
+                    36,
+                    44
+                ], obj.animate);
+            return fn.apply(obj, arguments);
+        }.bind(this)({ top: 10 }, __recognizer289897688.logProbe([
+            36,
+            67,
+            36,
+            71
+        ], __recognizer289897688.logProbe([
+            36,
+            61,
+            36,
+            66
+        ], __recognizer289897688.logProbe([
+            36,
+            56,
+            36,
+            60
+        ], this).delay).show)));
+        (function () {
+            var obj = __recognizer289897688.logProbe([
+                    39,
+                    8,
+                    39,
+                    13
+                ], _this), fn = __recognizer289897688.logProbe([
+                    39,
+                    14,
+                    39,
+                    21
+                ], obj.trigger);
+            return fn.apply(obj, arguments);
+        }.bind(this)(__recognizer289897688.logProbe([
             39,
+            22,
+            39,
+            28
+        ], objDom)));
+        __recognizer289897688.logProbe([
+            42,
             8,
-            41,
+            45,
             30
-        ], __recognizer611862069.logProbe([
-            39,
+        ], __recognizer289897688.logProbe([
+            42,
             8,
-            39,
+            42,
             18
         ], setTimeout)(function () {
-            __recognizer611862069.logEntry([
-                39,
+            __recognizer289897688.logEntry([
+                42,
                 19,
-                39,
+                42,
                 27
             ], arguments);
             (function () {
-                var obj = __recognizer611862069.logProbe([
-                        40,
+                var obj = __recognizer289897688.logProbe([
+                        44,
                         12,
-                        40,
+                        44,
                         17
-                    ], _this), fn = __recognizer611862069.logProbe([
-                        40,
+                    ], _this), fn = __recognizer289897688.logProbe([
+                        44,
                         18,
-                        40,
+                        44,
                         22
                     ], obj.hide);
                 return fn.apply(obj, arguments);
-            }.bind(this)(__recognizer611862069.logProbe([
-                40,
+            }.bind(this)(__recognizer289897688.logProbe([
+                44,
                 23,
-                40,
+                44,
                 29
             ], objDom)));
-        }, __recognizer611862069.logProbe([
-            41,
+        }, __recognizer289897688.logProbe([
+            45,
             23,
-            41,
+            45,
             29
-        ], __recognizer611862069.logProbe([
-            41,
+        ], __recognizer289897688.logProbe([
+            45,
             17,
-            41,
+            45,
             22
-        ], __recognizer611862069.logProbe([
-            41,
+        ], __recognizer289897688.logProbe([
+            45,
             11,
-            41,
+            45,
             16
         ], _this).delay).hidden)));
     };
     alerts.prototype.hide = function (objDom) {
-        __recognizer611862069.logEntry([
-            44,
+        __recognizer289897688.logEntry([
+            48,
             28,
-            44,
+            48,
             36
         ], arguments);
         (function () {
-            var obj = function () {
-                    var obj = function () {
-                            var obj = __recognizer611862069.logProbe([
-                                    45,
-                                    8,
-                                    45,
-                                    17
-                                ], __recognizer611862069.logProbe([
-                                    45,
-                                    8,
-                                    45,
-                                    9
-                                ], $)(__recognizer611862069.logProbe([
-                                    45,
-                                    10,
-                                    45,
-                                    16
-                                ], objDom))), fn = __recognizer611862069.logProbe([
-                                    45,
-                                    18,
-                                    45,
-                                    26
-                                ], obj.children);
-                            return fn.apply(obj, arguments);
-                        }.bind(this)(), fn = __recognizer611862069.logProbe([
-                            45,
-                            29,
-                            45,
-                            34
-                        ], obj.first);
-                    return fn.apply(obj, arguments);
-                }.bind(this)(), fn = __recognizer611862069.logProbe([
-                    45,
-                    37,
-                    45,
-                    45
-                ], obj.addClass);
-            return fn.apply(obj, arguments);
-        }.bind(this)('hide'));
-        (function () {
-            var obj = __recognizer611862069.logProbe([
-                    46,
+            var obj = __recognizer289897688.logProbe([
+                    49,
                     8,
-                    46,
+                    49,
                     17
-                ], __recognizer611862069.logProbe([
-                    46,
+                ], __recognizer289897688.logProbe([
+                    49,
                     8,
-                    46,
+                    49,
                     9
-                ], $)(__recognizer611862069.logProbe([
-                    46,
+                ], $)(__recognizer289897688.logProbe([
+                    49,
                     10,
-                    46,
+                    49,
                     16
-                ], objDom))), fn = __recognizer611862069.logProbe([
-                    46,
+                ], objDom))), fn = __recognizer289897688.logProbe([
+                    49,
                     18,
-                    46,
+                    49,
                     25
                 ], obj.animate);
             return fn.apply(obj, arguments);
         }.bind(this)({
             top: -function () {
-                var obj = __recognizer611862069.logProbe([
-                        46,
+                var obj = __recognizer289897688.logProbe([
+                        49,
                         34,
-                        46,
+                        49,
                         43
-                    ], __recognizer611862069.logProbe([
-                        46,
+                    ], __recognizer289897688.logProbe([
+                        49,
                         34,
-                        46,
+                        49,
                         35
-                    ], $)(__recognizer611862069.logProbe([
-                        46,
+                    ], $)(__recognizer289897688.logProbe([
+                        49,
                         36,
-                        46,
+                        49,
                         42
-                    ], objDom))), fn = __recognizer611862069.logProbe([
-                        46,
+                    ], objDom))), fn = __recognizer289897688.logProbe([
+                        49,
                         44,
-                        46,
+                        49,
                         55
                     ], obj.outerHeight);
                 return fn.apply(obj, arguments);
             }.bind(this)() * 3
-        }, __recognizer611862069.logProbe([
-            46,
+        }, __recognizer289897688.logProbe([
+            49,
             75,
-            46,
+            49,
             79
-        ], __recognizer611862069.logProbe([
-            46,
+        ], __recognizer289897688.logProbe([
+            49,
             69,
-            46,
+            49,
             74
-        ], __recognizer611862069.logProbe([
-            46,
+        ], __recognizer289897688.logProbe([
+            49,
             64,
-            46,
+            49,
             68
         ], this).delay).show)));
-    };
-    $.fn.alerts = function (type, conf) {
-        __recognizer611862069.logEntry([
-            50,
-            14,
-            50,
-            22
-        ], arguments);
-        var alert;
-        alert = new (__recognizer611862069.logProbe([
-            54,
-            16,
-            54,
-            22
-        ], alerts))();
         (function () {
-            var obj = __recognizer611862069.logProbe([
+            var obj = function () {
+                    var obj = function () {
+                            var obj = __recognizer289897688.logProbe([
+                                    50,
+                                    8,
+                                    50,
+                                    17
+                                ], __recognizer289897688.logProbe([
+                                    50,
+                                    8,
+                                    50,
+                                    9
+                                ], $)(__recognizer289897688.logProbe([
+                                    50,
+                                    10,
+                                    50,
+                                    16
+                                ], objDom))), fn = __recognizer289897688.logProbe([
+                                    50,
+                                    18,
+                                    50,
+                                    26
+                                ], obj.children);
+                            return fn.apply(obj, arguments);
+                        }.bind(this)(), fn = __recognizer289897688.logProbe([
+                            50,
+                            29,
+                            50,
+                            34
+                        ], obj.first);
+                    return fn.apply(obj, arguments);
+                }.bind(this)(), fn = __recognizer289897688.logProbe([
+                    50,
+                    37,
+                    50,
+                    44
+                ], obj.animate);
+            return fn.apply(obj, arguments);
+        }.bind(this)({ top: -100 }, __recognizer289897688.logProbe([
+            50,
+            69,
+            50,
+            73
+        ], __recognizer289897688.logProbe([
+            50,
+            63,
+            50,
+            68
+        ], __recognizer289897688.logProbe([
+            50,
+            58,
+            50,
+            62
+        ], this).delay).show)));
+    };
+    alerts.prototype.close = function (objDom) {
+        __recognizer289897688.logEntry([
+            54,
+            29,
+            54,
+            37
+        ], arguments);
+        (function () {
+            var obj = __recognizer289897688.logProbe([
                     55,
-                    4,
+                    8,
+                    55,
+                    17
+                ], __recognizer289897688.logProbe([
+                    55,
+                    8,
                     55,
                     9
-                ], alert), fn = __recognizer611862069.logProbe([
+                ], $)(__recognizer289897688.logProbe([
                     55,
                     10,
                     55,
+                    16
+                ], objDom))), fn = __recognizer289897688.logProbe([
+                    55,
+                    18,
+                    55,
+                    25
+                ], obj.animate);
+            return fn.apply(obj, arguments);
+        }.bind(this)({
+            top: -function () {
+                var obj = __recognizer289897688.logProbe([
+                        55,
+                        34,
+                        55,
+                        43
+                    ], __recognizer289897688.logProbe([
+                        55,
+                        34,
+                        55,
+                        35
+                    ], $)(__recognizer289897688.logProbe([
+                        55,
+                        36,
+                        55,
+                        42
+                    ], objDom))), fn = __recognizer289897688.logProbe([
+                        55,
+                        44,
+                        55,
+                        55
+                    ], obj.outerHeight);
+                return fn.apply(obj, arguments);
+            }.bind(this)() * 3
+        }, __recognizer289897688.logProbe([
+            55,
+            75,
+            55,
+            79
+        ], __recognizer289897688.logProbe([
+            55,
+            69,
+            55,
+            74
+        ], __recognizer289897688.logProbe([
+            55,
+            64,
+            55,
+            68
+        ], this).delay).show)));
+    };
+    alerts.prototype.trigger = function (objDom) {
+        __recognizer289897688.logEntry([
+            59,
+            31,
+            59,
+            39
+        ], arguments);
+        var _this = __recognizer289897688.logProbe([
+                60,
+                20,
+                60,
+                24
+            ], this);
+        (function () {
+            var obj = function () {
+                    var obj = function () {
+                            var obj = __recognizer289897688.logProbe([
+                                    61,
+                                    8,
+                                    61,
+                                    17
+                                ], __recognizer289897688.logProbe([
+                                    61,
+                                    8,
+                                    61,
+                                    9
+                                ], $)(__recognizer289897688.logProbe([
+                                    61,
+                                    10,
+                                    61,
+                                    16
+                                ], objDom))), fn = __recognizer289897688.logProbe([
+                                    61,
+                                    18,
+                                    61,
+                                    26
+                                ], obj.children);
+                            return fn.apply(obj, arguments);
+                        }.bind(this)(), fn = __recognizer289897688.logProbe([
+                            61,
+                            29,
+                            61,
+                            34
+                        ], obj.first);
+                    return fn.apply(obj, arguments);
+                }.bind(this)(), fn = __recognizer289897688.logProbe([
+                    61,
+                    37,
+                    61,
+                    39
+                ], obj.on);
+            return fn.apply(obj, arguments);
+        }.bind(this)({
+            'click': function () {
+                __recognizer289897688.logEntry([
+                    62,
+                    20,
+                    62,
+                    28
+                ], arguments);
+                (function () {
+                    var obj = __recognizer289897688.logProbe([
+                            63,
+                            16,
+                            63,
+                            21
+                        ], _this), fn = __recognizer289897688.logProbe([
+                            63,
+                            22,
+                            63,
+                            27
+                        ], obj.close);
+                    return fn.apply(obj, arguments);
+                }.bind(this)(__recognizer289897688.logProbe([
+                    63,
+                    28,
+                    63,
+                    34
+                ], objDom)));
+            }
+        }));
+    };
+    $.fn.alerts = function (type, conf) {
+        __recognizer289897688.logEntry([
+            72,
+            14,
+            72,
+            22
+        ], arguments);
+        var alert;
+        alert = new (__recognizer289897688.logProbe([
+            76,
+            16,
+            76,
+            22
+        ], alerts))();
+        (function () {
+            var obj = __recognizer289897688.logProbe([
+                    77,
+                    4,
+                    77,
+                    9
+                ], alert), fn = __recognizer289897688.logProbe([
+                    77,
+                    10,
+                    77,
                     14
                 ], obj.show);
             return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer611862069.logProbe([
-            55,
+        }.bind(this)(__recognizer289897688.logProbe([
+            77,
             15,
-            55,
+            77,
             19
-        ], this), __recognizer611862069.logProbe([
-            55,
+        ], this), __recognizer289897688.logProbe([
+            77,
             21,
-            55,
+            77,
             25
-        ], type), __recognizer611862069.logProbe([
-            55,
+        ], type), __recognizer289897688.logProbe([
+            77,
             27,
-            55,
+            77,
             31
         ], conf)));
     };
-}(__recognizer611862069.logProbe([
-    58,
+}(__recognizer289897688.logProbe([
+    80,
     3,
-    58,
+    80,
     9
 ], jQuery)));

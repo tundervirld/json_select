@@ -12,11 +12,14 @@ body {
   text-align: center;
   display: block;    
     
-    div{
+    
+}
+header{
+  text-align: right;
+}
+div{
         max-width: 800px;
     }
-}
-
 footer {
     color: #555;
 }

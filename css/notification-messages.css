@@ -15,6 +15,7 @@
     box-shadow:         -6px 6px 8px 0px rgba(50, 50, 50, 0.5);
     bkit-animation: animate-bg 5s linear infinite;
     moz-animation: animate-bg 5s linear infinite;
+    max-width: none;
     
    
 }
@@ -72,6 +73,7 @@
     background-image: url("../img/messages/messages.png");
     background-position: 0 0px;
     text-indent:  -10000em;
+    cursor: pointer;
 }
 .show{display: block;}
 

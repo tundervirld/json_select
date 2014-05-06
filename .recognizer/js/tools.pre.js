@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer19078704 = (function () {
+var __recognizer805388873 = (function () {
     'use strict';
 
     var global = this;
@@ -99,7 +99,7 @@ var __recognizer19078704 = (function () {
 
 ToolsPre = {
     init: function (id) {
-        __recognizer19078704.logEntry([
+        __recognizer805388873.logEntry([
             2,
             9,
             2,
@@ -107,17 +107,17 @@ ToolsPre = {
         ], arguments);
         var _coreConfig = {
                 swfPath: 'js/zeroClipboard/ZeroClipboard.swf',
-                trustedDomains: [__recognizer19078704.logProbe([
+                trustedDomains: [__recognizer805388873.logProbe([
                         11,
                         45,
                         11,
                         49
-                    ], __recognizer19078704.logProbe([
+                    ], __recognizer805388873.logProbe([
                         11,
                         36,
                         11,
                         44
-                    ], __recognizer19078704.logProbe([
+                    ], __recognizer805388873.logProbe([
                         11,
                         29,
                         11,
@@ -127,328 +127,287 @@ ToolsPre = {
                 forceEnhancedClipboard: false
             };
         (function () {
-            var obj = __recognizer19078704.logProbe([
-                    20,
+            var obj = __recognizer805388873.logProbe([
+                    19,
                     8,
-                    20,
-                    15
-                ], console), fn = __recognizer19078704.logProbe([
-                    20,
-                    16,
-                    20,
-                    19
-                ], obj.log);
-            return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer19078704.logProbe([
-            20,
-            20,
-            20,
-            31
-        ], _coreConfig)));
-        (function () {
-            var obj = __recognizer19078704.logProbe([
-                    21,
-                    8,
-                    21,
+                    19,
                     12
-                ], this), fn = __recognizer19078704.logProbe([
-                    21,
+                ], this), fn = __recognizer805388873.logProbe([
+                    19,
                     13,
-                    21,
+                    19,
                     17
                 ], obj.copy);
             return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer19078704.logProbe([
-            21,
+        }.bind(this)(__recognizer805388873.logProbe([
+            19,
             18,
-            21,
+            19,
             20
-        ], id), __recognizer19078704.logProbe([
-            21,
+        ], id), __recognizer805388873.logProbe([
+            19,
             22,
-            21,
+            19,
             33
         ], _coreConfig)));
     },
     copy: function (id, _coreConfig) {
-        __recognizer19078704.logEntry([
-            24,
+        __recognizer805388873.logEntry([
+            22,
             10,
-            24,
+            22,
             18
         ], arguments);
-        var clientTarget = new (__recognizer19078704.logProbe([
-                25,
+        var clientTarget = new (__recognizer805388873.logProbe([
+                23,
                 31,
-                25,
+                23,
                 44
-            ], ZeroClipboard))(__recognizer19078704.logProbe([
-                25,
+            ], ZeroClipboard))(__recognizer805388873.logProbe([
+                23,
                 46,
-                25,
+                23,
                 51
-            ], __recognizer19078704.logProbe([
-                25,
+            ], __recognizer805388873.logProbe([
+                23,
                 46,
-                25,
+                23,
                 47
-            ], $)(__recognizer19078704.logProbe([
-                25,
+            ], $)(__recognizer805388873.logProbe([
+                23,
                 48,
-                25,
+                23,
                 50
-            ], id))), __recognizer19078704.logProbe([
-                25,
+            ], id))), __recognizer805388873.logProbe([
+                23,
                 54,
-                25,
+                23,
                 65
             ], _coreConfig));
         (function () {
-            var obj = __recognizer19078704.logProbe([
-                    33,
+            var obj = __recognizer805388873.logProbe([
+                    25,
                     8,
-                    33,
-                    15
-                ], console), fn = __recognizer19078704.logProbe([
-                    33,
-                    16,
-                    33,
-                    19
-                ], obj.log);
-            return fn.apply(obj, arguments);
-        }.bind(this)(__recognizer19078704.logProbe([
-            33,
-            20,
-            33,
-            32
-        ], clientTarget)));
-        (function () {
-            var obj = __recognizer19078704.logProbe([
-                    37,
-                    8,
-                    37,
+                    25,
                     20
-                ], clientTarget), fn = __recognizer19078704.logProbe([
-                    37,
+                ], clientTarget), fn = __recognizer805388873.logProbe([
+                    25,
                     21,
-                    37,
+                    25,
                     23
                 ], obj.on);
             return fn.apply(obj, arguments);
         }.bind(this)('ready', function (event) {
-            __recognizer19078704.logEntry([
-                37,
+            __recognizer805388873.logEntry([
+                25,
                 34,
-                37,
+                25,
                 42
             ], arguments);
             (function () {
-                var obj = __recognizer19078704.logProbe([
-                        40,
+                var obj = __recognizer805388873.logProbe([
+                        29,
                         12,
-                        40,
+                        29,
                         24
-                    ], clientTarget), fn = __recognizer19078704.logProbe([
-                        40,
+                    ], clientTarget), fn = __recognizer805388873.logProbe([
+                        29,
                         25,
-                        40,
+                        29,
                         27
                     ], obj.on);
                 return fn.apply(obj, arguments);
             }.bind(this)('copy', function (event, args) {
-                __recognizer19078704.logEntry([
-                    40,
+                __recognizer805388873.logEntry([
+                    29,
                     37,
-                    40,
+                    29,
                     45
                 ], arguments);
-                var idTextToCopy = function () {
-                        var obj = __recognizer19078704.logProbe([
-                                42,
-                                35,
-                                42,
-                                50
-                            ], __recognizer19078704.logProbe([
-                                42,
-                                35,
-                                42,
-                                36
-                            ], $)(__recognizer19078704.logProbe([
-                                42,
-                                43,
-                                42,
-                                49
-                            ], __recognizer19078704.logProbe([
-                                42,
-                                37,
-                                42,
+                var idOriginTextToCopy = function () {
+                        var obj = __recognizer805388873.logProbe([
+                                30,
+                                41,
+                                30,
+                                56
+                            ], __recognizer805388873.logProbe([
+                                30,
+                                41,
+                                30,
                                 42
-                            ], event).target))), fn = __recognizer19078704.logProbe([
-                                42,
-                                51,
-                                42,
+                            ], $)(__recognizer805388873.logProbe([
+                                30,
+                                49,
+                                30,
                                 55
+                            ], __recognizer805388873.logProbe([
+                                30,
+                                43,
+                                30,
+                                48
+                            ], event).target))), fn = __recognizer805388873.logProbe([
+                                30,
+                                57,
+                                30,
+                                61
                             ], obj.data);
                         return fn.apply(obj, arguments);
                     }.bind(this)('clipboard-target');
                 (function () {
-                    var obj = __recognizer19078704.logProbe([
-                            43,
+                    var obj = __recognizer805388873.logProbe([
+                            31,
                             22,
-                            43,
+                            31,
                             35
-                        ], __recognizer19078704.logProbe([
-                            43,
+                        ], __recognizer805388873.logProbe([
+                            31,
                             16,
-                            43,
+                            31,
                             21
-                        ], event).clipboardData), fn = __recognizer19078704.logProbe([
-                            43,
+                        ], event).clipboardData), fn = __recognizer805388873.logProbe([
+                            31,
                             36,
-                            43,
+                            31,
                             43
                         ], obj.setData);
                     return fn.apply(obj, arguments);
                 }.bind(this)('text/plain', function () {
-                    var obj = __recognizer19078704.logProbe([
-                            43,
+                    var obj = __recognizer805388873.logProbe([
+                            31,
                             58,
-                            43,
-                            73
-                        ], __recognizer19078704.logProbe([
-                            43,
+                            31,
+                            79
+                        ], __recognizer805388873.logProbe([
+                            31,
                             58,
-                            43,
+                            31,
                             59
-                        ], $)(__recognizer19078704.logProbe([
-                            43,
+                        ], $)(__recognizer805388873.logProbe([
+                            31,
                             60,
-                            43,
-                            72
-                        ], idTextToCopy))), fn = __recognizer19078704.logProbe([
-                            43,
-                            74,
-                            43,
+                            31,
                             78
+                        ], idOriginTextToCopy))), fn = __recognizer805388873.logProbe([
+                            31,
+                            80,
+                            31,
+                            84
                         ], obj.html);
                     return fn.apply(obj, arguments);
                 }.bind(this)()));
             }));
             (function () {
-                var obj = __recognizer19078704.logProbe([
-                        46,
+                var obj = __recognizer805388873.logProbe([
+                        34,
                         12,
-                        46,
+                        34,
                         24
-                    ], clientTarget), fn = __recognizer19078704.logProbe([
-                        46,
+                    ], clientTarget), fn = __recognizer805388873.logProbe([
+                        34,
                         25,
-                        46,
+                        34,
                         27
                     ], obj.on);
                 return fn.apply(obj, arguments);
             }.bind(this)('aftercopy', function (event) {
-                __recognizer19078704.logEntry([
-                    46,
+                __recognizer805388873.logEntry([
+                    34,
                     42,
-                    46,
+                    34,
                     50
                 ], arguments);
                 (function () {
-                    var obj = __recognizer19078704.logProbe([
-                            48,
+                    var obj = __recognizer805388873.logProbe([
+                            37,
                             16,
-                            48,
-                            23
-                        ], console), fn = __recognizer19078704.logProbe([
-                            48,
-                            24,
-                            48,
-                            27
-                        ], obj.log);
+                            37,
+                            29
+                        ], __recognizer805388873.logProbe([
+                            37,
+                            16,
+                            37,
+                            17
+                        ], $)('.message')), fn = __recognizer805388873.logProbe([
+                            37,
+                            30,
+                            37,
+                            36
+                        ], obj.alerts);
                     return fn.apply(obj, arguments);
-                }.bind(this)('Copied text to clipboard: ' + __recognizer19078704.logProbe([
-                    48,
-                    70,
-                    48,
-                    82
-                ], __recognizer19078704.logProbe([
-                    48,
-                    65,
-                    48,
-                    69
-                ], __recognizer19078704.logProbe([
-                    48,
-                    59,
-                    48,
-                    64
-                ], event).data)['text/plain'])));
+                }.bind(this)('success', {
+                    delay: {
+                        show: 350,
+                        hidden: 5000
+                    },
+                    title: 'Texto copiado.',
+                    message: 'El json esta en el porta papeles, puede copiarlo en su editor de JSON preferido.'
+                }));
             }));
         }));
         (function () {
-            var obj = __recognizer19078704.logProbe([
-                    52,
+            var obj = __recognizer805388873.logProbe([
+                    45,
                     8,
-                    52,
+                    45,
                     20
-                ], clientTarget), fn = __recognizer19078704.logProbe([
-                    52,
+                ], clientTarget), fn = __recognizer805388873.logProbe([
+                    45,
                     21,
-                    52,
+                    45,
                     23
                 ], obj.on);
             return fn.apply(obj, arguments);
         }.bind(this)('error', function (event) {
-            __recognizer19078704.logEntry([
-                52,
+            __recognizer805388873.logEntry([
+                45,
                 34,
-                52,
+                45,
                 42
             ], arguments);
             (function () {
-                var obj = __recognizer19078704.logProbe([
-                        53,
+                var obj = __recognizer805388873.logProbe([
+                        46,
                         12,
-                        53,
+                        46,
                         19
-                    ], console), fn = __recognizer19078704.logProbe([
-                        53,
+                    ], console), fn = __recognizer805388873.logProbe([
+                        46,
                         20,
-                        53,
+                        46,
                         23
                     ], obj.log);
                 return fn.apply(obj, arguments);
-            }.bind(this)('ZeroClipboard error of type "' + __recognizer19078704.logProbe([
-                53,
+            }.bind(this)('ZeroClipboard error of type "' + __recognizer805388873.logProbe([
+                46,
                 65,
-                53,
+                46,
                 69
-            ], __recognizer19078704.logProbe([
-                53,
+            ], __recognizer805388873.logProbe([
+                46,
                 59,
-                53,
+                46,
                 64
-            ], event).name) + '": ' + __recognizer19078704.logProbe([
-                53,
+            ], event).name) + '": ' + __recognizer805388873.logProbe([
+                46,
                 86,
-                53,
+                46,
                 93
-            ], __recognizer19078704.logProbe([
-                53,
+            ], __recognizer805388873.logProbe([
+                46,
                 80,
-                53,
+                46,
                 85
             ], event).message)));
             (function () {
-                var obj = __recognizer19078704.logProbe([
-                        54,
+                var obj = __recognizer805388873.logProbe([
+                        47,
                         12,
-                        54,
+                        47,
                         25
-                    ], ZeroClipboard), fn = __recognizer19078704.logProbe([
-                        54,
+                    ], ZeroClipboard), fn = __recognizer805388873.logProbe([
+                        47,
                         26,
-                        54,
+                        47,
                         33
                     ], obj.destroy);
                 return fn.apply(obj, arguments);
