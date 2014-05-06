@@ -30,6 +30,8 @@
         $(objDom).children().first().next().html(this.title);
         $(objDom).children().last().html(this.message);
 
+        
+
         //Add Type Alert
         $(objDom).addClass(this.type);
         $(objDom).animate({top: $(window).scrollTop()}, this.delay.show);
@@ -48,6 +50,9 @@
     alerts.prototype.hide = function(objDom){  
         $(objDom).animate({top: - $(objDom).outerHeight() * 3}, this.delay.show);
         $(objDom).children().first().animate({top: -100}, this.delay.show);
+
+        //removeOld Class
+        $(objDom).removeClass(this.type);
 
     };
 

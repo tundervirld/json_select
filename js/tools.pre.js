@@ -35,7 +35,7 @@ ToolsPre = {
             //Event after copy text in clipboad more common used, for show messages Text copied...!
              //console.log('Copied text to clipboard: ' + event.data['text/plain']);
                 $(".message").alerts("success",{
-                    delay:{show: 350, hidden: 5000},
+                    delay:{show: 350, hidden: 1000},
                     title: "Texto copiado.",
                     message: "El json esta en el porta papeles, puede copiarlo en su editor de JSON preferido."
                 });
@@ -44,6 +44,11 @@ ToolsPre = {
 
         clientTarget.on( 'error', function(event) {
             console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+            $(".message").alerts("error",{
+                    delay:{show: 350, hidden: 10000},
+                    title: "Error",
+                    message: "No se ha podido localizar el archivo .swf, " + event.name + ': ' + event.message
+            });
             ZeroClipboard.destroy();
         } );
 
