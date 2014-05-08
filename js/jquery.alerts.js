@@ -5,82 +5,117 @@
 * @author     Roger Reyes
 * @version    V1
 * @date    04/05/2014
+*
+*
+//example use 
+$(".message").alerts("success",{
+    animationspeed:{show: 350, hide: 150000},
+    title: "Texto copiado.",
+    message: "El json esta en el porta papeles, puede copiarlo en su editor de JSON preferido."
+});
 */
 (function($){
+    //Type messages 
+    //remember on ly use 'info' || 'warning' || 'error' ||'success', else you've build Css class to name assign
+    $.fn.alerts = function(type, conf){
 
-    //function pager(container, totalPages, callback, object){ 
-    function alerts(object){
-        this.type     = "success";
-        this.delay    = {show: 350, hidden: 1000};  //1s, time in mili secunds delay to hidden message        
-        this.title    = "Title in you alert message"; //Title Message alert
-        this.message  = "This is a message, is a option inyect data in message for dynamic valus in real time in your alert"; //Message alert
-   }
+        //options default alerts plugin
+        var defaults  = {
+            type     :"success",
+            animationspeed : {show: 350, hide: 3000},  //1s, time in mili secunds delay to hide message        
+            title    : "Title in you alertMessages message", //Title Message alertMessages
+            message  : "This is a message, is a option inyect data in message for dynamic valus in real time in your alertMessages", //Message alertMessages
+            autoHide : true // auto Hide Alerts post show
+        };
 
-    alerts.prototype.show = function(objDom, type, conf){        
-        var _this = this;
-        if(conf){
-            this.delay    = conf.delay    || _this.delay ;            
-            this.title    = conf.title    || _this.title ;            
-            this.message  = conf.message  || _this.message ;            
-        }
-            this.type     = type          || _this.type ;
-        
-        //Set values
-        
-        $(objDom).children().first().next().html(this.title);
-        $(objDom).children().last().html(this.message);
+        //Extend dem' options and save data conf in plugin
+        var options = $.extend({}, defaults , conf );
 
-        
+        //global variables;
+        var alertMessages = $(this),
+            alertElements = alertMessages.children(),
+            // children elements in message div
+            elements = { 
+                        buttonClose: alertElements.first(), 
+                        title: alertElements.first().next(), 
+                        message: alertElements.last()
+            },
+            height = alertMessages.outerHeight(),
+            topPositionWindows = $(window).scrollTop(),
+            topPosition = alertMessages.css("top"),
+            locked = false,
+            typeAlert = type; //'info' || 'warning' || 'error' ||'success']
 
-        //Add Type Alert
-        $(objDom).addClass(this.type);
-        $(objDom).animate({top: $(window).scrollTop()}, this.delay.show);
-        $(objDom).children().first().animate({top: 10}, this.delay.show);
-        
-        //set trigger click botton close
-        _this.trigger(objDom);
 
-        //Set timer to hide messages 
-        setTimeout(function(){
+
+        elements.buttonClose.unbind('click.alertMessagesEvent');
+
+        //Open Method
+        alertMessages.bind('alerts:open', function () {
+                if(!locked) {
+                    lockAlerts();
+                    elements.title.html(options.title);
+                    elements.message.html(options.message);
+
+                    //Add Type Alert
+                    alertMessages.addClass(typeAlert);
+                    alertMessages.animate({top: topPositionWindows}, options.animationspeed.show);
+                    elements.buttonClose.animate({top: 10}, options.animationspeed.show);
+                }
+            alertMessages.unbind('alerts:open');
+        });  
+
+        //Closing Animation
+        alertMessages.bind('alerts:close', function () {
+          if(!locked) {
+                lockAlerts();
+
+                alertMessages.animate({top: - height * 3}, options.animationspeed.show);
+                elements.buttonClose.animate({top: -100}, options.animationspeed.show);
+
+                alertMessages.trigger('buttonClose');
+
+                //removeOld Class
+                setTimeout(function(){
+                    alertMessages.removeClass(typeAlert)
+                }, 150);
             
-            _this.hide(objDom);
-        }, _this.delay.hidden);
-    };
-
-    alerts.prototype.hide = function(objDom){  
-        $(objDom).animate({top: - $(objDom).outerHeight() * 3}, this.delay.show);
-        $(objDom).children().first().animate({top: -100}, this.delay.show);
-
-        //removeOld Class
-        $(objDom).removeClass(this.type);
-
-    };
-
-    alerts.prototype.close = function(objDom){  
-        $(objDom).animate({top: - $(objDom).outerHeight() * 3}, this.delay.show);
-
-    };
-
-    alerts.prototype.trigger = function(objDom){  
-        var _this = this;
-        $(objDom).children().first().on({
-            'click':function(){
-                _this.close(objDom);
+                unlockAlerts();
             }
+            
+            alertMessages.unbind('reveal:close');
         });
 
+        //Close Modal Listeners
+        var closeButton = elements.buttonClose.bind('click.alertMessagesEvent', function () {
+          unlockAlerts();
+          alertMessages.trigger('alerts:close');
+          console.log("se cierra");
+        });
+
+        //Show Alerts Immediately
+        alertMessages.trigger('alerts:open');
+
+        
+
+        //Set timer to hide messages 
+        if(options.autoHide){
+            setTimeout(function(){
+                unlockAlerts();    
+                alertMessages.trigger('alerts:close')
+            }, options.animationspeed.hide);
+        };
+        
+
+        //function lock unlock alerts
+        function unlockAlerts() { 
+            locked = false;
+        }
+        function lockAlerts() {
+            locked = true;
+        }      
+        
     };
 
-
-
-//Type messages ['info','warning','error','success']
-$.fn.alerts = function(type, conf){
-    //instanced alerts message
-    
-    var alert;
-    alert = new alerts();
-    alert.show(this, type, conf);
-};
-
 })(jQuery);
-    
+     
