@@ -1,5 +1,8 @@
 [
   {
+    "codigo": 1,
+    "codigo_transaccional": 110001,
+    "code": "CODPA1BR",
     "pais": "Brasil",
     "superficie_km_2": "8.547.406",
     "poblacion": "206,5 (22)",
@@ -10,6 +13,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
   },
   {
+    "codigo": 2,
+    "codigo_transaccional": 110002,
+    "code": "CODPA2AR",
     "pais": "Argentina",
     "superficie_km_2": "2.791.508[nota 3]",
     "poblacion": "42,1 (15)",
@@ -20,6 +26,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
   },
   {
+    "codigo": 3,
+    "codigo_transaccional": 110003,
+    "code": "CODPA3BR",
     "pais": "Perú",
     "superficie_km_2": "1.285.240",
     "poblacion": "31,3 (28)",
@@ -30,6 +39,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
   },
   {
+    "codigo": 4,
+    "codigo_transaccional": 110004,
+    "code": "CODPA4CO",
     "pais": "Colombia",
     "superficie_km_2": "1.141.748",
     "poblacion": "47,7 (36)",
@@ -40,6 +52,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
   },
   {
+    "codigo": 5,
+    "codigo_transaccional": 110005,
+    "code": "CODPA5BO",
     "pais": "Bolivia",
     "superficie_km_2": "1.098.581",
     "poblacion": "10,4 (8)",
@@ -50,6 +65,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
   },
   {
+    "codigo": 6,
+    "codigo_transaccional": 110006,
+    "code": "CODPA6VE",
     "pais": "Venezuela",
     "superficie_km_2": "916.445[nota 4]",
     "poblacion": "29,9 (27)",
@@ -60,6 +78,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/20px-Flag_of_Venezuela.svg.png"
   },
   {
+    "codigo": 7,
+    "codigo_transaccional": 110070,
+    "code": "CODPA7CH",
     "pais": "Chile",
     "superficie_km_2": "756.948[nota 5]",
     "poblacion": "17,5 (24)",
@@ -70,6 +91,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
   },
   {
+    "codigo": 8,
+    "codigo_transaccional": 110008,
+    "code": "CODPA8PA",
     "pais": "Paraguay",
     "superficie_km_2": "406.757",
     "poblacion": "7.1 (14)",
@@ -80,6 +104,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
   },
   {
+    "codigo": 9,
+    "codigo_transaccional": 110009,
+    "code": "CODPA9EC",
     "pais": "Ecuador",
     "superficie_km_2": "283.560",
     "poblacion": "15,4 (47)",
@@ -90,6 +117,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
   },
   {
+    "codigo": 10,
+    "codigo_transaccional": 110010,
+    "code": "CODPA10GY",
     "pais": "Guyana",
     "superficie_km_2": "215.096",
     "poblacion": "0,7 (3)",
@@ -100,6 +130,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/20px-Flag_of_Guyana.svg.png"
   },
   {
+    "codigo": 11,
+    "codigo_transaccional": 110011,
+    "code": "CODPA11UR",
     "pais": "Uruguay",
     "superficie_km_2": "189.928",
     "poblacion": "3,4 (19)",
@@ -109,6 +142,9 @@
     "FIELD7": ""
   },
   {
+    "codigo": 12,
+    "codigo_transaccional": 110012,
+    "code": "CODPA12SU",
     "pais": "Surinam",
     "superficie_km_2": "163.458",
     "poblacion": "0,5 (3)",
@@ -119,6 +155,9 @@
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/20px-Flag_of_Suriname.svg.png"
   },
   {
+    "codigo": 13,
+    "codigo_transaccional": 110013,
+    "code": "CODPA13TT",
     "pais": "Trinidad y Tobago",
     "superficie_km_2": "5.128",
     "poblacion": "1,2 (254)",
@@ -128,4 +167,4 @@
     "FIELD7": "",
     "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/20px-Flag_of_Trinidad_and_Tobago.svg.png"
   }
-]
+] 

@@ -32,79 +32,197 @@
         </header>
 
         <h1>Json to Select</h1>
+
         <div class="gist-readme">
-            <p>
-                Existen varios modos de uso segun la necesidad, en este ejemplo ponemos a tus disposicion los dos mas usados: <a href="javascript:void(0)">Simple</a>, <a href="javascript:void(0)">Cascada de dependencia.</a>
-            </p>
+            <p>En el desarrollo de aplicaciones web que están orientadas a la integracion y dinamismo, es necesario el uso de API'S para ofrecer una experiencia de ususario mas elaborada. Por esta razon jsonSelect es una herramienta de facil integracion en tu proyecto web que permitira inyertar a manera de JSON los valores que necesites en un select y  la vez nombrar como necesites las propiedades a manera de atributo en el caso de necesitar que la misma seleccion te devuelva varias alternativas que le hagan referencia.
+
+            Para que quede mas claro el ejemplo hemos planteado un ejercicio que desde un Json que contiene los paises de Sub America y algunas de las caracteristicas de estos, sera pasado a nuestro plugin JsonSelect, nombraremos los atributos del json a nombres que nos faciliten la comprension y estraccion de informacion con respecto al pais seleccionado en el select.    
         </div>
 
-
+        <h2>Metodo Simple de Json Select, paises de Sud America</h2>
         <div class="container_select">
-            
-            
-            
             <div class="div_json">
                 <div class="tools-pre">
                     <div class="tools-tittle">Tools</div>  
                     <div class="tool-buttons">
-                        <div class="button-copy" data-clipboard-target="json_example_1"></div>    
+                        <div title="Copiar el Json" class="button-copy" data-clipboard-target="json_example_1"></div>    
                     </div>  
                     <div class="tool-buttons">
-                        <div class="button-copy" data-clipboard-target="json_example_1"></div>   
+                        <div title="Mostrar en una nueva ventana el Json" class="button-open-new-tab" data-to-open="json_example_1"></div>   
                     </div>  
                 </div> 
                 <div class="container-pre">
                     <div class="vertical-displacement">
                         <pre id="json_example_1">[
-    {
-        "array": [
-            1,
-            2,
-            3
-        ],
-        "boolean": true,
-        "null": null,
-        "number": 123,
-        "object": {
-            "a": "b",
-            "c": "d",
-            "e": "f"
-        },
-        "string": "Hello World"
-    },
-    {
-        "array": [
-            1,
-            2,
-            3
-        ],
-        "boolean": true,
-        "null": null,
-        "number": 123,
-        "object": {
-            "a": "b",
-            "c": "d",
-            "e": "f"
-        },
-        "string": "Hello World"
-    },
-    {
-        "array": [
-            1,
-            2,
-            3
-        ],
-        "boolean": true,
-        "null": null,
-        "number": 123,
-        "object": {
-            "a": "b",
-            "c": "d",
-            "e": "f"
-        },
-        "string": "Hello World"
-    }
-]
+  {
+    "codigo": 1,
+    "codigo_transaccional": 110001,
+    "code": "CODPA1BR",
+    "pais": "Brasil",
+    "superficie_km_2": "8.547.406",
+    "poblacion": "206,5 (22)",
+    "IDH": "0,730",
+    "FIELD5": "",
+    "mandatario": "Dilma Rousseff",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png"
+  },
+  {
+    "codigo": 2,
+    "codigo_transaccional": 110002,
+    "code": "CODPA2AR",
+    "pais": "Argentina",
+    "superficie_km_2": "2.791.508[nota 3]",
+    "poblacion": "42,1 (15)",
+    "IDH": "0,811",
+    "FIELD5": "",
+    "mandatario": "Cristina Fernández de Kirchner",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/20px-Flag_of_Argentina.svg.png"
+  },
+  {
+    "codigo": 3,
+    "codigo_transaccional": 110003,
+    "code": "CODPA3BR",
+    "pais": "Perú",
+    "superficie_km_2": "1.285.240",
+    "poblacion": "31,3 (28)",
+    "IDH": "0,741",
+    "FIELD5": "",
+    "mandatario": "Ollanta Humala",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/20px-Flag_of_Peru.svg.png"
+  },
+  {
+    "codigo": 4,
+    "codigo_transaccional": 110004,
+    "code": "CODPA4CO",
+    "pais": "Colombia",
+    "superficie_km_2": "1.141.748",
+    "poblacion": "47,7 (36)",
+    "IDH": "0,719",
+    "FIELD5": "",
+    "mandatario": "Juan Manuel Santos",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/20px-Flag_of_Colombia.svg.png"
+  },
+  {
+    "codigo": 5,
+    "codigo_transaccional": 110005,
+    "code": "CODPA5BO",
+    "pais": "Bolivia",
+    "superficie_km_2": "1.098.581",
+    "poblacion": "10,4 (8)",
+    "IDH": "0,675",
+    "FIELD5": "",
+    "mandatario": "Evo Morales",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/20px-Flag_of_Bolivia.svg.png"
+  },
+  {
+    "codigo": 6,
+    "codigo_transaccional": 110006,
+    "code": "CODPA6VE",
+    "pais": "Venezuela",
+    "superficie_km_2": "916.445[nota 4]",
+    "poblacion": "29,9 (27)",
+    "IDH": "0,748",
+    "FIELD5": "",
+    "mandatario": "Nicolás Maduro",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/20px-Flag_of_Venezuela.svg.png"
+  },
+  {
+    "codigo": 7,
+    "codigo_transaccional": 110070,
+    "code": "CODPA7CH",
+    "pais": "Chile",
+    "superficie_km_2": "756.948[nota 5]",
+    "poblacion": "17,5 (24)",
+    "IDH": "0,819",
+    "FIELD5": "",
+    "mandatario": "Michelle Bachelet",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/20px-Flag_of_Chile.svg.png"
+  },
+  {
+    "codigo": 8,
+    "codigo_transaccional": 110008,
+    "code": "CODPA8PA",
+    "pais": "Paraguay",
+    "superficie_km_2": "406.757",
+    "poblacion": "7.1 (14)",
+    "IDH": "0,669",
+    "FIELD5": "",
+    "mandatario": "Horacio Cartes",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/20px-Flag_of_Paraguay.svg.png"
+  },
+  {
+    "codigo": 9,
+    "codigo_transaccional": 110009,
+    "code": "CODPA9EC",
+    "pais": "Ecuador",
+    "superficie_km_2": "283.560",
+    "poblacion": "15,4 (47)",
+    "IDH": "0,724",
+    "FIELD5": "",
+    "mandatario": "Rafael Correa",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/20px-Flag_of_Ecuador.svg.png"
+  },
+  {
+    "codigo": 10,
+    "codigo_transaccional": 110010,
+    "code": "CODPA10GY",
+    "pais": "Guyana",
+    "superficie_km_2": "215.096",
+    "poblacion": "0,7 (3)",
+    "IDH": "0,636",
+    "FIELD5": "",
+    "mandatario": "Donald Ramotar",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/20px-Flag_of_Guyana.svg.png"
+  },
+  {
+    "codigo": 11,
+    "codigo_transaccional": 110011,
+    "code": "CODPA11UR",
+    "pais": "Uruguay",
+    "superficie_km_2": "189.928",
+    "poblacion": "3,4 (19)",
+    "IDH": "0,792",
+    "FIELD5": "",
+    "mandatario": "José Mujica",
+    "FIELD7": ""
+  },
+  {
+    "codigo": 12,
+    "codigo_transaccional": 110012,
+    "code": "CODPA12SU",
+    "pais": "Surinam",
+    "superficie_km_2": "163.458",
+    "poblacion": "0,5 (3)",
+    "IDH": "0,684",
+    "FIELD5": "",
+    "mandatario": "Dési Bouterse",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/20px-Flag_of_Suriname.svg.png"
+  },
+  {
+    "codigo": 13,
+    "codigo_transaccional": 110013,
+    "code": "CODPA13TT",
+    "pais": "Trinidad y Tobago",
+    "superficie_km_2": "5.128",
+    "poblacion": "1,2 (254)",
+    "IDH": "0,760",
+    "FIELD5": "",
+    "mandatario": "Anthony Carmona",
+    "FIELD7": "",
+    "bandera": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/20px-Flag_of_Trinidad_and_Tobago.svg.png"
+  }
+] 
             </pre>   
                     </div>
                     
@@ -128,9 +246,11 @@
 
         <div class="clear"></div>
         <div class="gist-readme">
-            <p>En el desarrollo de aplicaciones web que estan orientadas a la integracion y dinamismo, es necesario el uso de API'S para ofrecer una experiencia de ususario mas elaborada. Por esta razon jsonSelect es una herramienta de facil integracion en tu proyecto web que permitira inyertar a manera de JSON los valores que necesites en un select. <strong> con negrita </strong>
+            <p>
+                Por ejemplo si no desea que un campo que viene en el json se genere como un atributo en el json select, debera colocarlo dentro de la configuracion de los atributos y setearlos como oculto ya que el valor por defecto es nombrarlo con el mismo nombre que viene del Json.
 
-                <p>Links a cosas<a href="javascript:void(0)"> lala</a>!</p>
+Si no se especifica ningun valor en la configuracion de los atributos, se consideran como el atributo value el que venga dentro de los atributos del JSON con el nombre de llave "ID", si no viene ningun campo con el nombre ID, jSonSelect generará un id incremental, como recomendacion es pararle un atributo con llave "ID", para poder tratar los resultados con mayor presicion y control por el desarrollador que incorporo JsonSelect a su proyecto.
+            </p>
         </div>
 
         <div class="gist-sources">
@@ -178,7 +298,16 @@
 <script type="text/javascript">
     $(window).load(function() {
         // executes when complete page is fully loaded, including all frames, objects and images
-//        ToolsPre.init("#target-to-copy")
-        ToolsPre.init(".button-copy")
+       // ToolsPre.init(".button-copy");
+
+         $('.button-open-new-tab').on({
+            'click':function(){
+                   var json = $("#" + $(this).data("to-open")).html();
+                   var myWindow = window.open("lal", "msgWindows", "width=800, height=600");
+                       myWindow.document.title = "Json example to copy";
+                       myWindow.document.body.innerHTML = "<b>Please wait....</b>";
+                       myWindow.document.write(json);
+            }
+        });     
     });
 </script>
